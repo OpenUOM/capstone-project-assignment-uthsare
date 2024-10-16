@@ -51,6 +51,7 @@ const addTeacher = async (id, name, age) => {
             .raw(sql, [id, name, age])
             .then(() => {
                 resolve({status: "Successfully inserted Teacher"})
+                
             })
             .catch((error) => {
                 reject(error);
